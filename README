@@ -1,0 +1,64 @@
+=============
+   Updates
+=============
+Please visit http://forum.thedgtl.net for all updates and support!
+
+=============
+ Description
+=============
+iChatMessages is an iChat addon that allows you to format join/leave/kick messages
+This plugin REQUIRES iChat-2.x (http://forum.thedgtl.net/viewtopic.php?f=2&t=4)
+
+Download (Direct JAR): http://thedgtl.net/bukkit/iChatMessages.jar
+Source: https://github.com/TheDgtl/iChatMessages
+
+=============
+ Features
+=============
+Through the iChat API layer this plugin has access to all of a users variables defined for iChat.
+Colors are supported in all parts of the formatting.
+You can pick and choose which messages to customize, you don't need to customize what you don't want to.
+
+=============
+ Formatting
+=============
+Message formatting is defined in the file plugins/iChatMessages/config.yml
+The message formats can contain colors and variables as explained below.
+To use colors use the standard Minecraft color codes found here: http://www.minecraftwiki.net/wiki/Classic_Server_Protocol#Color_Codes
+
+Available variables:
++prefix - The prefix for this user, or this users group if they don't have one defined.
++suffix - The suffix for this user, or this users group if they don't have one defined.
++name - The users name
++displayname - The users display name (Set by plugins such as Towny)
++iname - The iChat formatted player name (Defined by iname-format) 
++group - The users group
++healthbar - A visual health bar for this user 
++health - The users current health value (Between 0 and 20)
++message - The message the player typed
++world - What world the player is currently in
++time - Timestamp, configurable in config.yml. Uses the format for SimpleDateFormat - http://bit.ly/dscw40
++reason - The reason for a kick (Only available in kickFormat)
+
+Example (Default):
+joinFormat: +iname has joined the game
+quitFormat: +iname has left the game
+kickFormat: +iname has been kicked for +reason
+
+As with iChat you can define any number of custom variables in your iChat variables.yml file and use them in iChatMessages formats!
+
+=============
+ Permissions
+=============
+ichatm.reload - Allow reloading the iChatMessages config
+
+=============
+  Commands
+=============
+/ichatm reload - Reload the iChatMessages config file.
+
+=============
+  Changes
+=============
+[Version 1.0.0]
+ - Initial release of iChatMessages. Basic feature set.

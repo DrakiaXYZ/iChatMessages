@@ -1,0 +1,10 @@
+name: iChatMessages
+main: net.TheDgtl.iChatMessages.iChatMessages
+version: 1.0.0
+author: Drakia
+website: http://forum.thedgtl.net
+commands:
+  ichatm:
+    usage: /<command> reload
+    description: Reload iChatMessages config
+depend: [iChat]

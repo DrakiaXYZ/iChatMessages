@@ -1,0 +1,6 @@
+enableJoin: true
+enableQuit: true
+enableKick: true
+joinFormat: +iname has joined the game
+quitFormat: +iname has left the game
+kickFormat: +iname has been kicked for +reason
